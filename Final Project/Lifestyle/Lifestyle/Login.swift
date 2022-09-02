@@ -26,7 +26,7 @@ struct Login: View {
 //                    }.padding().frame(width: 100, height: 60).background(.indigo).cornerRadius(10).foregroundColor(.white).font(.system(size: 25))
                     Text("you dont have account?").foregroundColor(.white)
                 
-                    NavigationLink(destination: buttonView()){
+                    NavigationLink(destination: buttonView() ){
                             Text("create account")
                         
                            

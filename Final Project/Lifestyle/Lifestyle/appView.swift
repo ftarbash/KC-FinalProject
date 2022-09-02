@@ -9,7 +9,27 @@ import SwiftUI
 
 struct appView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            Text("home")
+                .tabItem {
+                    Image(systemName: "house")
+                   HomeView()
+                                    }
+            Text("setting")
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    SettingsView()
+                                    }
+            Text("profile")
+                .tabItem {
+                    Image(systemName: "person.fill")
+                    Text("profile")
+                                    }
+            
+            
+            
+                
+        }
     }
 }
 

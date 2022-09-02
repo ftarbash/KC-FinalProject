@@ -13,7 +13,7 @@ struct buttonView: View {
     @State var EMAIL = ""
     @State var PASSword = ""
     var body: some View {
-        ZStack{Color.blue.opacity(0.8).ignoresSafeArea()
+        ZStack{Color.indigo.opacity(0.6).ignoresSafeArea()
             VStack{
                 Text("signup").font(.system(size: 40)).padding()
                 TextField("first name",text: $first).padding().frame(width: 350, height: 40).background(.black.opacity(0.05)).cornerRadius(10)
@@ -24,7 +24,7 @@ struct buttonView: View {
             SecureField("password",text: $PASSword).padding().frame(width: 350, height: 40).background(.black.opacity(0.05)).cornerRadius(10)
             
                 
-                NavigationLink(destination: appView()){
+                NavigationLink(destination: questions()){
                         Text("signup")
                 }.padding().background(.yellow).foregroundColor(.black).cornerRadius(10)
                 
