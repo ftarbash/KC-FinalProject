@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var WEIGHT = ""
+    @State var AGE = ""
+    @State var HEIGHT = ""
     var body: some View {
         VStack{
-            HStack{
-           Text("hi")
+            
+                TextField("h",text: $WEIGHT)
+                
                 
             }
-        }
+        
     }
-}
+    }
+    
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {

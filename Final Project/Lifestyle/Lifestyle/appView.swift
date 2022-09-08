@@ -9,6 +9,10 @@ import SwiftUI
 
 struct appView: View {
     var body: some View {
+        
+        VStack {
+            
+           
         TabView{
             Text("home")
                 .tabItem {
@@ -23,12 +27,13 @@ struct appView: View {
             Text("profile")
                 .tabItem {
                     Image(systemName: "person.fill")
-                    Text("profile")
+                    profileView()
                                     }
             
             
             
                 
+        }
         }
     }
 }

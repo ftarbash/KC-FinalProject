@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-        Login()
+        firstView()
            
             
 }
@@ -21,6 +21,7 @@ struct ContentView: View {
     
 
 struct ContentView_Previews: PreviewProvider {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     static var previews: some View {
         ContentView()
     }
