@@ -23,7 +23,7 @@ struct question: View {
                 
                 
                 if aab == false {
-                    NavigationLink(destination: appView()) {
+                    NavigationLink(destination: appView(Result: $Result)) {
                         Image(systemName: "chevron.right").offset(x: 160, y: 1).font(.system(size: 28)) }       }
                 
                 

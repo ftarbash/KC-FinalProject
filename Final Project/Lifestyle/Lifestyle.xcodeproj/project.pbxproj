@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C50D0AF228C8DC0A00DE966B /* firstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D0AF128C8DC0A00DE966B /* firstView.swift */; };
 		C50D0B0528CA61F200DE966B /* question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D0B0428CA61F200DE966B /* question.swift */; };
+		C50D0B0728CA7D2400DE966B /* foodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D0B0628CA7D2400DE966B /* foodView.swift */; };
+		C50D0B0928CA884600DE966B /* cookiesResipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50D0B0828CA884600DE966B /* cookiesResipe.swift */; };
 		C54FF7C128C1E8A800282E81 /* LifestyleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF7C028C1E8A800282E81 /* LifestyleApp.swift */; };
 		C54FF7C328C1E8A800282E81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF7C228C1E8A800282E81 /* ContentView.swift */; };
 		C54FF7C528C1E8A900282E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54FF7C428C1E8A900282E81 /* Assets.xcassets */; };
@@ -16,8 +18,6 @@
 		C54FF7CF28C1E91600282E81 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF7CE28C1E91600282E81 /* Login.swift */; };
 		C54FF7D528C1EB6300282E81 /* appView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF7D428C1EB6300282E81 /* appView.swift */; };
 		C54FF7D728C1F37100282E81 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF7D628C1F37100282E81 /* HomeView.swift */; };
-		C54FF7D928C1F5FD00282E81 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF7D828C1F5FD00282E81 /* SettingsView.swift */; };
-		C54FF84628C3362900282E81 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54FF84528C3362900282E81 /* profileView.swift */; };
 		C54FF84A28C387DA00282E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C54FF84928C387DA00282E81 /* GoogleService-Info.plist */; };
 		C54FF84D28C3885A00282E81 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C54FF84C28C3885A00282E81 /* FirebaseAnalytics */; };
 		C54FF84F28C3885A00282E81 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C54FF84E28C3885A00282E81 /* FirebaseAuth */; };
@@ -29,6 +29,8 @@
 /* Begin PBXFileReference section */
 		C50D0AF128C8DC0A00DE966B /* firstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstView.swift; sourceTree = "<group>"; };
 		C50D0B0428CA61F200DE966B /* question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = question.swift; sourceTree = "<group>"; };
+		C50D0B0628CA7D2400DE966B /* foodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodView.swift; sourceTree = "<group>"; };
+		C50D0B0828CA884600DE966B /* cookiesResipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cookiesResipe.swift; sourceTree = "<group>"; };
 		C54FF7BD28C1E8A800282E81 /* Lifestyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lifestyle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54FF7C028C1E8A800282E81 /* LifestyleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifestyleApp.swift; sourceTree = "<group>"; };
 		C54FF7C228C1E8A800282E81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,8 +39,6 @@
 		C54FF7CE28C1E91600282E81 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		C54FF7D428C1EB6300282E81 /* appView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appView.swift; sourceTree = "<group>"; };
 		C54FF7D628C1F37100282E81 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		C54FF7D828C1F5FD00282E81 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		C54FF84528C3362900282E81 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
 		C54FF84928C387DA00282E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,8 +83,8 @@
 				C50D0B0428CA61F200DE966B /* question.swift */,
 				C50D0AF128C8DC0A00DE966B /* firstView.swift */,
 				C54FF7D428C1EB6300282E81 /* appView.swift */,
-				C54FF84528C3362900282E81 /* profileView.swift */,
-				C54FF7D828C1F5FD00282E81 /* SettingsView.swift */,
+				C50D0B0628CA7D2400DE966B /* foodView.swift */,
+				C50D0B0828CA884600DE966B /* cookiesResipe.swift */,
 				C54FF7D628C1F37100282E81 /* HomeView.swift */,
 				C54FF7C428C1E8A900282E81 /* Assets.xcassets */,
 				C54FF84928C387DA00282E81 /* GoogleService-Info.plist */,
@@ -182,14 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54FF7D928C1F5FD00282E81 /* SettingsView.swift in Sources */,
 				C50D0AF228C8DC0A00DE966B /* firstView.swift in Sources */,
 				C50D0B0528CA61F200DE966B /* question.swift in Sources */,
 				C54FF7D528C1EB6300282E81 /* appView.swift in Sources */,
 				C54FF7CF28C1E91600282E81 /* Login.swift in Sources */,
+				C50D0B0728CA7D2400DE966B /* foodView.swift in Sources */,
+				C50D0B0928CA884600DE966B /* cookiesResipe.swift in Sources */,
 				C54FF7C328C1E8A800282E81 /* ContentView.swift in Sources */,
 				C54FF7D728C1F37100282E81 /* HomeView.swift in Sources */,
-				C54FF84628C3362900282E81 /* profileView.swift in Sources */,
 				C54FF7C128C1E8A800282E81 /* LifestyleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

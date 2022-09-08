@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct appView: View {
+    @Binding var Result:Int
     var body: some View {
         
         VStack {
@@ -17,18 +18,17 @@ struct appView: View {
             Text("home")
                 .tabItem {
                     Image(systemName: "house")
-                   HomeView()
+                    Text("home")
+                    HomeView(Result: $Result)
+                   
                                     }
             Text("setting")
                 .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    SettingsView()
+                    Image(systemName: "fork.knife")
+                    Text("food")
+                    foodView()
                                     }
-            Text("profile")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    profileView()
-                                    }
+            
             
             
             
@@ -40,6 +40,6 @@ struct appView: View {
 
 struct appView_Previews: PreviewProvider {
     static var previews: some View {
-        appView()
+        appView(Result: .constant(0))
     }
 }
