@@ -19,71 +19,75 @@ struct question: View {
     @State  var num = 0
     var body: some View {
         
+        
             VStack(spacing:20){
-                
-                
-                if aab == false {
-                    NavigationLink(destination: appView(Result: $Result)) {
-                        Image(systemName: "chevron.right").offset(x: 160, y: 1).font(.system(size: 28)) }       }
-                
-                
-                Image("im").resizable().scaledToFit().frame(width: 380, height: 290)
-                
-                
-                
-                TextField("weight",text: $Weight).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
-                    .cornerRadius(10)
-                
-                
-                
-            TextField("Height",text: $Height).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
-                    .cornerRadius(10)
-                
-                
-                
-            TextField("age",text: $Age).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
-                    .cornerRadius(10)
-                
-                
-                
-                
-            TextField("gender",text: $gender).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
-                    .cornerRadius(10)
-                
-                
-                
-                
-                
-                
-                
-                Button("Count"){
-                    Result =  getBMR(weight: Double(Weight) ?? 0.0, height: Double(Height) ?? 0.0, age: Int(Age) ?? 0, gender: gender)
-                    if gender.isEmpty || Weight.isEmpty || Height.isEmpty || Age.isEmpty || Age == "\(num)" {
-                        errorme = "error"
-                        Result = 0
-                        aab = true
-                    }
-                    if errorme == "error" && Result != 0 {
-                        errorme = ""
-                        aab = false
-                    } else {
-                        aab = false
-                    }
                     
-                }.frame(width: 200, height: 50).background(.indigo.opacity(0.8)).foregroundColor(.white).cornerRadius(10)
-               
-                Text("\(Result)").font(.system(size: 30)).font(.headline)
-                Text("\(errorme)").foregroundColor(.red)
-               
-               
+                    
+                    
+                    
+                    Image("im").resizable().scaledToFit().frame(width: 380, height: 290)
+                    
+                    
+                    
+                    TextField("weight",text: $Weight).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                    
+                    
+                TextField("Height",text: $Height).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                    
+                    
+                TextField("age",text: $Age).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                    
+                    
+                    
+                TextField("gender",text: $gender).padding().frame(width: 370, height: 50).background(.blue.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                VStack {
+                    Button("Count"){
+                            Result =  getBMR(weight: Double(Weight) ?? 0.0, height: Double(Height) ?? 0.0, age: Int(Age) ?? 0, gender: gender)
+                            if gender.isEmpty || Weight.isEmpty || Height.isEmpty || Age.isEmpty {
+                                errorme = "error"
+                                Result = 0
+                                aab = true
+                            } else {
+                                aab = false
+                            }
+                            if errorme == "error" && Result != 0 {
+                                errorme = ""
+                                aab = false
+                            }
+                            
+                    }.frame(width: 200, height: 50).background(.indigo.opacity(0.8)).foregroundColor(.white).cornerRadius(10)
+                
+                   
+                    Text("\(Result)").font(.system(size: 30)).font(.headline)
+                    Text("\(errorme)").foregroundColor(.red)
+                   
+                   
 
+                    if aab == false {
+                        NavigationLink(destination: appView(Result: $Result)) {
+                            Image(systemName: "chevron.right").foregroundColor(.black).padding() }  }
+                }
+                
+                       
                    
-            
                    
-               
-               
-               
+                   
             }.padding()
+        
     }
     
     func getBMR(weight:Double, height:Double, age:Int, gender: String)->Int{

@@ -11,29 +11,31 @@ struct appView: View {
     @Binding var Result:Int
     var body: some View {
         
-        VStack {
-            
-           
-        TabView{
-            Text("home")
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("home")
-                    HomeView(Result: $Result)
-                   
-                                    }
-            Text("setting")
-                .tabItem {
-                    Image(systemName: "fork.knife")
-                    Text("food")
-                    foodView()
-                                    }
-            
-            
-            
-            
+         
+            VStack {
                 
-        }
+               
+            TabView{
+                HomeView(Result: $Result)
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("home")
+                        
+                       
+                                        }
+                foodView()
+                    .tabItem {
+                        Image(systemName: "fork.knife")
+                        Text("food")
+                       
+                                        }
+                
+                
+                
+                
+                    
+            
+            }
         }
     }
 }
